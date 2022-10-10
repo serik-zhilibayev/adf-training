@@ -1,0 +1,35 @@
+{
+	"name": "Json2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"isTest": {
+				"type": "bool",
+				"defaultValue": true
+			}
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "groupeddailydata.json",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@formatDateTime(addDays(utcNow(), -1), 'yyyy-MM-dd')",
+					"type": "Expression"
+				},
+				"fileSystem": {
+					"value": "dailyreports",
+					"type": "Expression"
+				}
+			}
+		},
+		"schema": {}
+	}
+}
