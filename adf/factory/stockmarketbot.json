@@ -1,0 +1,9 @@
+{
+	"name": "stockmarketbot",
+	"location": "westeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "715a8926-cc1f-47d3-a295-87ff561fedae",
+		"tenantId": "6e57be88-4b4c-45a3-8991-6a0b3bebbd9b"
+	}
+}
