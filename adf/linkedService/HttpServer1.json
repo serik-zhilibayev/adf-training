@@ -4,7 +4,7 @@
 		"annotations": [],
 		"type": "HttpServer",
 		"typeProperties": {
-			"url": "@{concat('https://api.polygon.io/v2/aggs/grouped/locale/us/market/stocks/',addDays(utcNow('yyyy-MM-dd'), -1),'?adjusted=true&apiKey=Lz_G9JMSnvBQKwqReZlVhu5D8N8N0uYd')}",
+			"url": "@{concat('https://api.polygon.io/v2/aggs/grouped/locale/us/market/stocks/',formatDateTime(addDays(utcNow(), -1), 'yyyy-MM-dd'),'?adjusted=true&apiKey=Lz_G9JMSnvBQKwqReZlVhu5D8N8N0uYd')}",
 			"enableServerCertificateValidation": true,
 			"authenticationType": "Anonymous"
 		}
