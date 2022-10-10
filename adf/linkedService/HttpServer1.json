@@ -3,8 +3,8 @@
 	"properties": {
 		"parameters": {
 			"isTest": {
-				"type": "bool",
-				"defaultValue": true
+				"type": "string",
+				"defaultValue": "1"
 			}
 		},
 		"annotations": [],
