@@ -4,7 +4,7 @@
 		"parameters": {
 			"isTest": {
 				"type": "bool",
-				"defaultValue": "True"
+				"defaultValue": true
 			}
 		},
 		"annotations": [],
